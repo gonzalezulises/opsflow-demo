@@ -36,7 +36,7 @@ export default function DemoLayout({ children }: { children: React.ReactNode }) 
       <aside className="w-64 bg-white border-r border-border flex flex-col shrink-0">
         <div className="p-5 border-b border-border">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo-rizoma.png" alt="Rizoma" width={100} height={33} className="h-8 w-auto" />
+            <Image src="/logo-rizoma.png" alt="Rizoma" width={300} height={100} className="h-20 w-auto" />
           </Link>
         </div>
 

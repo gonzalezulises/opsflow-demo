@@ -18,7 +18,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="border-b border-border bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Image src="/logo-rizoma.png" alt="Rizoma" width={120} height={40} className="h-9 w-auto" />
+          <Image src="/logo-rizoma.png" alt="Rizoma" width={360} height={120} className="h-28 w-auto" />
           <Link
             href="/demo"
             className="inline-flex items-center gap-2 bg-rizoma-green text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-rizoma-green-dark transition-colors"

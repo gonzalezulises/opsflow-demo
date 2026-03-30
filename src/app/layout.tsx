@@ -15,6 +15,9 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   title: "Rizoma — Transformación operativa desde la raíz",
   description: "Demo interactiva: cómo Rizoma optimiza procesos con ciencia de datos aplicada.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
