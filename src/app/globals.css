@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Rizoma brand */
+  --rizoma-green: #289448;
+  --rizoma-green-light: #34A856;
+  --rizoma-green-dark: #1F7038;
+  --rizoma-cyan: #1FACC0;
+  --rizoma-cyan-light: #3FC5D6;
+  --rizoma-cyan-dark: #178A9A;
+  --rizoma-red: #C32421;
+  --rizoma-bg: #F0EDE5;
+
+  --background: #F0EDE5;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --muted: #e8e4dc;
+  --muted-foreground: #6b6560;
+  --border: #d4cfc7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-rizoma-green: var(--rizoma-green);
+  --color-rizoma-green-light: var(--rizoma-green-light);
+  --color-rizoma-green-dark: var(--rizoma-green-dark);
+  --color-rizoma-cyan: var(--rizoma-cyan);
+  --color-rizoma-cyan-light: var(--rizoma-cyan-light);
+  --color-rizoma-cyan-dark: var(--rizoma-cyan-dark);
+  --color-rizoma-red: var(--rizoma-red);
+  --color-rizoma-bg: var(--rizoma-bg);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-source-serif);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility classes */
+.card {
+  background: var(--card);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08);
+}
+
+.metric-highlight {
+  font-variant-numeric: tabular-nums;
 }
