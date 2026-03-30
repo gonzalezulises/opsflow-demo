@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   BarChart3,
@@ -17,12 +18,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="border-b border-border bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-rizoma-green flex items-center justify-center">
-              <span className="text-white font-bold">R</span>
-            </div>
-            <span className="font-bold text-lg">Rizoma</span>
-          </div>
+          <Image src="/logo-rizoma.png" alt="Rizoma" width={120} height={40} className="h-9 w-auto" />
           <Link
             href="/demo"
             className="inline-flex items-center gap-2 bg-rizoma-green text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-rizoma-green-dark transition-colors"

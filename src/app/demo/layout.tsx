@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   Building2,
@@ -35,13 +36,7 @@ export default function DemoLayout({ children }: { children: React.ReactNode }) 
       <aside className="w-64 bg-white border-r border-border flex flex-col shrink-0">
         <div className="p-5 border-b border-border">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-rizoma-green flex items-center justify-center">
-              <span className="text-white font-bold text-sm">R</span>
-            </div>
-            <div>
-              <p className="font-bold text-sm text-foreground">Rizoma</p>
-              <p className="text-[10px] text-muted-foreground">Demo interactiva</p>
-            </div>
+            <Image src="/logo-rizoma.png" alt="Rizoma" width={100} height={33} className="h-8 w-auto" />
           </Link>
         </div>
 
